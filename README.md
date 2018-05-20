@@ -1,5 +1,5 @@
 # gestao-tarefas-js
-Projeto criado apenas com JavaScript, HTML e CSS para gerenciar taferas.
+Projeto criado apenas com JavaScript, HTML e CSS para gerenciar tarefas.
 
 Esta aplicação foi feita apenas a fim de entender as Features do EcmaScript 6 e suas melhorias em relação ao ES5.
 
