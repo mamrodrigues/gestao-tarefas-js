@@ -1,0 +1,124 @@
+*{
+	box-sizing: border-box;
+ }
+
+body{
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+.container{
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+section{
+	margin: 2em 0;
+	overflow: hidden;
+}
+
+section h2{
+	font-size: 3em;
+	display: block;
+	padding-bottom: .5em;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: .5em;
+}
+
+table{
+	width: 100%;
+	margin-bottom : .5em;
+    table-layout: fixed;
+
+}
+
+td, th {
+	padding: .7em;
+	margin: 0;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+th{
+	font-weight: bold;
+	background-color: #EEE;
+}
+
+label{
+	color: #555;
+	display: block;
+	margin-bottom: .2em;
+}
+
+.input-type{
+	margin: 0;
+	padding-bottom: 1em;
+	width: 50%;
+	border: 1px solid #ccc;
+	padding: .7em;
+	width: 100%;
+}
+
+.half-size{
+	width: 40%;
+	display: inline-block;
+	padding: 10px 0px;
+	padding-left: 1em;
+}
+
+button{
+	padding: .5em 2em;
+	border: 0;
+	font-size: 1.2em;
+	align-content: center;
+	margin: 0;
+	margin-top: -3px;
+	color: #fff;
+	background-color:#191919;
+    margin: 20px 0px;
+}
+
+.campo-invalido{
+	border: 1px solid red;
+}
+
+.alta {
+	background-color: #ff7f7f;
+}
+.media {
+	background-color: #0080ff;
+}
+.baixa {
+	background-color: #ccffcc;
+}
+
+.fadeOut {
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.titulo-pagina {
+    font-family: Arial, Helvetica, sans-serif;
+	color: #FFF;
+	font-size: 1.7em;
+	vertical-align:	middle;
+	padding-left: 1em;
+	padding-top: 0.5em;
+	background-color: #191919;
+	height: 2em;
+	width: 100%;
+	color: #FFF;
+}
+
+.titulo-formulario {
+	font-size: 1.5em;
+	margin-top: 2em;
+	margin-bottom: 1em
+}
+
+.titulo-item {
+	font-size: 1em;
+	font-style: unset;
+	margin-bottom: 5px
+}

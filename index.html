@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Gestão de Tarefas</title>
+		<link rel="icon" href="icone.png" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+	</head>
+	<body>
+
+		<header>
+			<div>
+				<label class="titulo-pagina">GESTÃO DE TAREFAS</h2>
+			</div>
+		</header>
+		<main>
+			<section class="container">
+				<label class="titulo-formulario">LISTA DE TAREFAS</label>
+				<table>
+					<head>
+						<tr>
+							<th>Titulo</th>
+							<th>Descrição</th>
+							<th>Tempo Estimado</th>
+						</tr>
+					</head>
+					<tbody id="table-tasks">
+					</tbody>
+				</table>
+
+			</section>
+		</main>
+
+		<section class="container">
+		    <label class="titulo-formulario">CADASTRAR TAREFA</label>
+		    <form id="form-adiciona">
+		        <div class="half-size">
+		            <label class="titulo-item">Titulo</label>
+		            <input 
+			            id="titulo" 
+			            name="titulo" 
+			            type="text" 
+			            placeholder="Titulo da Tarefa" 
+			            class="input-type">
+		        </div>
+		        <div class="half-size">
+		            <label class="titulo-item">Prioridade</label>
+		            <select 
+		            	id="prioridade"
+		            	name="prioridade"
+		            	class="input-type">
+		            	<option value="alta">Alta</option>
+		            	<option value="media">Média</option>
+		            	<option value="baixa">Baixa</option>
+		            </select>
+		        </div>
+		        <div class="half-size">
+		            <label class="titulo-item">Descrição</label>
+		            <input 
+			            id="descricao" 
+			            name="descricao" 
+			            type="text" 
+			            placeholder="Descrição da Tarefa" 
+			            class="input-type">
+		        </div>
+		        <div class="half-size">
+		            <label class="titulo-item">Tempo</label>
+		            <input 
+			             id="tempo"
+			             name="tempo" 
+			             type="text" 
+			             placeholder="Tempo da Tarefa" 
+			             class="input-type">
+		        </div>
+
+		        <button id="criar-tarefa">
+		    		Criar Tarefa
+		    	</button>
+		    </form>
+		</section>
+
+		<script src="js/form.js" ></script>
+		<script src="js/remove-task.js" ></script>
+
+	</body>
+</html>
