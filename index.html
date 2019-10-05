@@ -17,24 +17,13 @@
 		<main>
 			<section class="container">
 				<label class="titulo-formulario">LISTA DE TAREFAS</label>
-				<table>
-					<head>
-						<tr>
-							<th>Titulo</th>
-							<th>Descrição</th>
-							<th>Tempo Estimado</th>
-						</tr>
-					</head>
-					<tbody id="table-tasks">
-					</tbody>
-				</table>
-
+				<div id="tarefasView"></div>
 			</section>
 		</main>
 
 		<section class="container">
 		    <label class="titulo-formulario">CADASTRAR TAREFA</label>
-		    <form id="form-adiciona">
+		    <form id="form-adiciona" onsubmit="tarefaController.adiciona(event)">
 		        <div class="half-size">
 		            <label class="titulo-item">Titulo</label>
 		            <input 
@@ -72,7 +61,15 @@
 			             type="text" 
 			             placeholder="Tempo da Tarefa" 
 			             class="input-type">
-		        </div>
+				</div>
+				<div class="half-size">
+					<label class="titulo-item">Prazo</label>
+					<input 
+						id="prazo"
+						name="prazo" 
+						type="date" 
+						class="input-type">
+				</div>
 
 		        <button id="criar-tarefa">
 		    		Criar Tarefa
@@ -80,8 +77,15 @@
 		    </form>
 		</section>
 
-		<script src="js/form.js" ></script>
-		<script src="js/remove-task.js" ></script>
+		<!--<script src="js/form.js" ></script>  -->
+		<!--<script src="js/remove-task.js" ></script>  -->
 
+		<script src="js/app/controller/TarefaController.js" ></script>
+		<script src="js/app/model/ListaTarefas.js" ></script>
+		<script src="js/app/model/Tarefa.js" ></script>
+		<script src="js/app/view/TarefasView.js" ></script>
+		<script>
+			let tarefaController = new TarefaController();
+		</script>
 	</body>
 </html>
