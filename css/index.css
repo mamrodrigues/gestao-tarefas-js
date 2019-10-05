@@ -8,7 +8,7 @@ body{
 }
 
 .container{
-	width: 60%;
+	width: 80%;
 	height: 100%;
 	margin: 0 auto;
 }
@@ -60,12 +60,20 @@ label{
 	width: 100%;
 }
 
+.terco{
+	width: 30%;
+	display: inline-block;
+	padding: 10px 0px;
+	padding-left: 1em;
+}
+
 .half-size{
 	width: 40%;
 	display: inline-block;
 	padding: 10px 0px;
 	padding-left: 1em;
 }
+
 
 button{
 	padding: .5em 2em;
@@ -113,8 +121,8 @@ button{
 
 .titulo-formulario {
 	font-size: 1.5em;
-	margin-top: 2em;
-	margin-bottom: 1em
+	margin-top: 1em;
+	margin-bottom: 0.5em
 }
 
 .titulo-item {

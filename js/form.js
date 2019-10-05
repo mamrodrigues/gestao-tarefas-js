@@ -1,3 +1,9 @@
+
+/**
+ * ESTE ARQUIVO NÃO É MAIS UTILIZADO NO PROJETO
+ * 
+ * Mantido apenas como backup para dúvidas e testes de eventos do Ecmascript6
+ */
 var botaoAdicionar = document.querySelector("#criar-tarefa");
 botaoAdicionar.addEventListener("click", function(event) {
     event.preventDefault();

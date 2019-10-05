@@ -1,7 +1,7 @@
-class TarefasView {
+class TarefasView extends View {
 
-    constructor(elemento){
-        this._elemento = elemento;
+    constructor(elemento) {
+        super(elemento);
     }
     
     _template(model) {
@@ -24,7 +24,7 @@ class TarefasView {
                                   <td>${tarefa.titulo}</td>
                                   <td>${tarefa.descricao}</td>
                                   <td>${tarefa.tempoEstimado}</td>
-                                  <td>${tarefa.prazo}</td>
+                                  <td>${DateHelper.dataParaTexto(tarefa.prazo)}</td>
                                   <td>
                                     <img src="edit.png" onclick="tarefaController.editar('${tarefa.id}')">
                                     &nbsp;&nbsp;&nbsp;&nbsp;

@@ -4,6 +4,10 @@
 		<meta charset="UTF-8">
 		<title>Gestão de Tarefas</title>
 		<link rel="icon" href="icone.png" type="image/x-icon">
+
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.css">
+	
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
 	</head>
@@ -14,17 +18,13 @@
 				<label class="titulo-pagina">GESTÃO DE TAREFAS</h2>
 			</div>
 		</header>
-		<main>
-			<section class="container">
-				<label class="titulo-formulario">LISTA DE TAREFAS</label>
-				<div id="tarefasView"></div>
-			</section>
-		</main>
 
 		<section class="container">
-		    <label class="titulo-formulario">CADASTRAR TAREFA</label>
+			<label class="titulo-formulario">CADASTRAR TAREFA</label>
+			<div id="mensagemView"></div>
+			
 		    <form id="form-adiciona" onsubmit="tarefaController.adiciona(event)">
-		        <div class="half-size">
+		        <div class="terco">
 		            <label class="titulo-item">Titulo</label>
 		            <input 
 			            id="titulo" 
@@ -33,7 +33,7 @@
 			            placeholder="Titulo da Tarefa" 
 			            class="input-type">
 		        </div>
-		        <div class="half-size">
+		        <div class="terco">
 		            <label class="titulo-item">Prioridade</label>
 		            <select 
 		            	id="prioridade"
@@ -44,7 +44,7 @@
 		            	<option value="baixa">Baixa</option>
 		            </select>
 		        </div>
-		        <div class="half-size">
+		        <div class="terco">
 		            <label class="titulo-item">Descrição</label>
 		            <input 
 			            id="descricao" 
@@ -53,7 +53,7 @@
 			            placeholder="Descrição da Tarefa" 
 			            class="input-type">
 		        </div>
-		        <div class="half-size">
+		        <div class="terco">
 		            <label class="titulo-item">Tempo</label>
 		            <input 
 			             id="tempo"
@@ -62,7 +62,7 @@
 			             placeholder="Tempo da Tarefa" 
 			             class="input-type">
 				</div>
-				<div class="half-size">
+				<div class="terco">
 					<label class="titulo-item">Prazo</label>
 					<input 
 						id="prazo"
@@ -70,20 +70,42 @@
 						type="date" 
 						class="input-type">
 				</div>
+				<div class="terco">
 
-		        <button id="criar-tarefa">
-		    		Criar Tarefa
-		    	</button>
+				</div>
+
+				<div class="half-size">
+					<button id="criar-tarefa">
+						Criar Tarefa
+					</button>
+				</div>
 		    </form>
 		</section>
+
+		<main>
+			<section class="container">
+				<label class="titulo-formulario">LISTA DE TAREFAS</label>
+	
+				<div id="tarefasView"></div>
+			</section>
+		</main>
 
 		<!--<script src="js/form.js" ></script>  -->
 		<!--<script src="js/remove-task.js" ></script>  -->
 
-		<script src="js/app/controller/TarefaController.js" ></script>
+		<script src="js/app/helper/DateHelper.js"></script>
+
+		<script src="js/app/model/Mensagem.js"> </script>
 		<script src="js/app/model/ListaTarefas.js" ></script>
 		<script src="js/app/model/Tarefa.js" ></script>
+
+		<script src="js/app/controller/TarefaController.js"></script>
+		<script src="js/app/service/ProxyFactory.js"></script>
+
+		<script src="js/app/view/View.js"></script>
+		<script src="js/app/view/MensagemView.js"></script>
 		<script src="js/app/view/TarefasView.js" ></script>
+
 		<script>
 			let tarefaController = new TarefaController();
 		</script>
